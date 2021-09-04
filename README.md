@@ -7,6 +7,8 @@ First screen - TableView.
 
   list of coins with fullname and images.
   
+  
+  
 Second screen - View.
 
   textfield to input amount of coins.
