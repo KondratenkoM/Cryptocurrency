@@ -18,6 +18,7 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
     
     
     var coinManager = CoinManager()
+    let explanation = Explanation()
     
     var currencyName: String?
     var coinName: String?
@@ -40,7 +41,7 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
         
     }
     
-    //MARK: - button method
+    //MARK: - calculate button
     @IBAction func calButtonPressed(_ sender: UIButton) {
         
         amountTF.endEditing(true)
@@ -52,6 +53,15 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
         resultLabel.text = "\(calculatedValue) \(currencyName!)"
         
     }
+    //MARK: - alert buttons
+    @IBAction func abbreviationsAlert(_ sender: UIButton) {
+        alert("Currency abbreviations", explanation.currencyExplanation)
+    }
+    
+    @IBAction func needHelpAlert(_ sender: UIButton) {
+        alert("Help", explanation.help)
+    }
+    
     
     //MARK: - picker config.
     
@@ -101,9 +111,18 @@ extension ViewController: CoinManagerDelegate{
         }
     }
 }
-    //MARK: - hide keyboard
+    //MARK: - hide keyboard, alert methods
 extension ViewController{
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    func alert(_ title: String, _ message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        
+        self.present(alert, animated: true)
+    }
 }
+
+

@@ -94,6 +94,28 @@
                                     <action selector="calButtonPressed:" destination="zpf-1F-ujK" eventType="touchUpInside" id="vz8-ru-9nI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaK-S0-Ucd">
+                                <rect key="frame" x="316" y="818" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6XZ-v5-2gC"/>
+                                    <constraint firstAttribute="width" constant="78" id="SUp-Ob-yQu"/>
+                                </constraints>
+                                <state key="normal" title="Need help?"/>
+                                <connections>
+                                    <action selector="needHelpAlert:" destination="zpf-1F-ujK" eventType="touchUpInside" id="kn7-Z4-ESL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgf-Be-ftw">
+                                <rect key="frame" x="20" y="818" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="7Gx-KI-ZQh"/>
+                                    <constraint firstAttribute="height" constant="30" id="yxH-bv-N4B"/>
+                                </constraints>
+                                <state key="normal" title="Abbreviations"/>
+                                <connections>
+                                    <action selector="abbreviationsAlert:" destination="zpf-1F-ujK" eventType="touchUpInside" id="Vah-5T-qCy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4me-FV-pi8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -108,7 +130,11 @@
                             <constraint firstItem="N0O-J5-MDi" firstAttribute="leading" secondItem="ISB-ke-pJg" secondAttribute="trailing" constant="24" id="Pau-rj-ynn"/>
                             <constraint firstItem="4me-FV-pi8" firstAttribute="trailing" secondItem="Ymp-Rr-QeX" secondAttribute="trailing" constant="100" id="TMi-MM-OLD"/>
                             <constraint firstItem="4me-FV-pi8" firstAttribute="trailing" secondItem="N0O-J5-MDi" secondAttribute="trailing" constant="42" id="Z4L-2X-Zd5"/>
+                            <constraint firstItem="4me-FV-pi8" firstAttribute="bottom" secondItem="xaK-S0-Ucd" secondAttribute="bottom" constant="14" id="ZDc-51-bP2"/>
                             <constraint firstItem="ISB-ke-pJg" firstAttribute="top" secondItem="Ymp-Rr-QeX" secondAttribute="bottom" constant="20" id="ZX5-Bo-oIw"/>
+                            <constraint firstItem="4me-FV-pi8" firstAttribute="trailing" secondItem="xaK-S0-Ucd" secondAttribute="trailing" constant="20" id="Zp4-qD-1mb"/>
+                            <constraint firstItem="Cgf-Be-ftw" firstAttribute="leading" secondItem="4me-FV-pi8" secondAttribute="leading" constant="20" id="cMo-fy-Kcf"/>
+                            <constraint firstItem="4me-FV-pi8" firstAttribute="bottom" secondItem="Cgf-Be-ftw" secondAttribute="bottom" constant="14" id="d9B-kp-YRi"/>
                             <constraint firstItem="iUL-gF-Y3c" firstAttribute="top" secondItem="ISB-ke-pJg" secondAttribute="bottom" constant="70" id="fJ5-Zk-9MK"/>
                             <constraint firstAttribute="trailing" secondItem="cpk-fZ-lg8" secondAttribute="trailing" id="ffV-6J-QN9"/>
                             <constraint firstItem="4me-FV-pi8" firstAttribute="bottom" secondItem="cpk-fZ-lg8" secondAttribute="bottom" constant="100" id="mez-A6-NYj"/>

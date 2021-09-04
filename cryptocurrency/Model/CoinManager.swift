@@ -42,7 +42,7 @@ struct CoinManager {
             if let coinPrice = self.parseJSON(safeData) {
                 let priceString = String(format: "%.3f", coinPrice)
                 self.delegate?.didUpdateCoin(coin: currency, price: coinPrice)
-                print(priceString)
+//                print(priceString)
             }
         }
         task.resume()
@@ -76,8 +76,10 @@ struct CoinManager {
             return "Zecash"
         case "XMR":
             return "Monero"
-        default:
+        case "DOGE":
             return "Dogecoin"
+        default:
+            return "Unknown"
         }
     }
     
