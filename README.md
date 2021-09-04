@@ -3,8 +3,8 @@
 This app works with "https://www.coinapi.io/".
 Get actual prices for cryptocurrency with API.
 
-First screen - TableView
-  list of coins with fullname and images
+First screen - TableView. \n
+  list of coins with fullname and images \n
   
 Second screen - View
   textfield to input amount of coins,
